@@ -6,7 +6,11 @@
  *
  * This content is released under the MIT License (MIT)
  *
+<<<<<<< HEAD
  * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+=======
+ * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +33,11 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
+<<<<<<< HEAD
  * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+=======
+ * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
@@ -382,10 +390,15 @@ abstract class CI_DB_forge {
 			{
 				return TRUE;
 			}
+<<<<<<< HEAD
 			else
 			{
 				$if_not_exists = FALSE;
 			}
+=======
+
+			$if_not_exists = FALSE;
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
 		}
 
 		$sql = ($if_not_exists)
@@ -488,7 +501,11 @@ abstract class CI_DB_forge {
 	 *
 	 * @param	string	$table		Table name
 	 * @param	bool	$if_exists	Whether to add an IF EXISTS condition
+<<<<<<< HEAD
 	 * @return	string
+=======
+	 * @return	mixed	(Returns a platform-specific DROP table string, or TRUE to indicate there's nothing to do)
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
 	 */
 	protected function _drop_table($table, $if_exists)
 	{
@@ -979,8 +996,13 @@ abstract class CI_DB_forge {
 	/**
 	 * Process indexes
 	 *
+<<<<<<< HEAD
 	 * @param	string	$table
 	 * @return	string
+=======
+	 * @param	string	$table	Table name
+	 * @return	string[] list of SQL statements
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
 	 */
 	protected function _process_indexes($table)
 	{

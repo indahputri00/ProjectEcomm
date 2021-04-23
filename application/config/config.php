@@ -23,7 +23,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+<<<<<<< HEAD
 $config['base_url'] = 'http://localhost/toko/';
+=======
+$config['base_url'] = 'http://localhost/ci_hmvc/';
+
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +40,11 @@ $config['base_url'] = 'http://localhost/toko/';
 | variable so that it is blank.
 |
 */
+<<<<<<< HEAD
 $config['index_page'] = '';
+=======
+$config['index_page'] = 'index.php';
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
 
 /*
 |--------------------------------------------------------------------------
@@ -324,7 +333,11 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
+<<<<<<< HEAD
 $config['encryption_key'] = '';
+=======
+$config['encryption_key'] = 'tutoriallogin';
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
 
 /*
 |--------------------------------------------------------------------------

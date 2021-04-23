@@ -47,7 +47,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |				'ssl_key'    - Path to the private key file
 |				'ssl_cert'   - Path to the public key certificate file
 |				'ssl_ca'     - Path to the certificate authority file
+<<<<<<< HEAD
 |				'ssl_capath' - Path to a directory containing trusted CA certificats in PEM format
+=======
+|				'ssl_capath' - Path to a directory containing trusted CA certificates in PEM format
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
 |				'ssl_cipher' - List of *allowed* ciphers to be used for the encryption, separated by colons (':')
 |				'ssl_verify' - TRUE/FALSE; Whether verify the server certificate or not ('mysqli' only)
 |
@@ -75,10 +79,17 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
+<<<<<<< HEAD
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
 	'database' => 'db_toko',
+=======
+	'hostname' => '127.0.0.1',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'shop',
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
