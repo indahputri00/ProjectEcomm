@@ -58,7 +58,19 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
+<<<<<<< HEAD
 $autoload['libraries'] = array('database');
+=======
+<<<<<<< HEAD
+$autoload['libraries'] = array('database');
+=======
+<<<<<<< HEAD
+$autoload['libraries'] = array('database','form_validation','session','pagination');
+=======
+$autoload['libraries'] = array('database','session');
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +101,19 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
+<<<<<<< HEAD
 $autoload['helper'] = array('url');
+=======
+<<<<<<< HEAD
+$autoload['helper'] = array('url');
+=======
+<<<<<<< HEAD
+$autoload['helper'] = array('form','url','html');
+=======
+$autoload['helper'] = array('url');
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
 
 /*
 | -------------------------------------------------------------------

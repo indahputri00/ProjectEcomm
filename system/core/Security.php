@@ -6,7 +6,19 @@
  *
  * This content is released under the MIT License (MIT)
  *
+<<<<<<< HEAD
  * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+=======
+<<<<<<< HEAD
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+=======
+<<<<<<< HEAD
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+=======
+ * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +41,19 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
+<<<<<<< HEAD
  * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+=======
+<<<<<<< HEAD
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+=======
+<<<<<<< HEAD
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+=======
+ * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
@@ -134,7 +158,21 @@ class CI_Security {
 	 */
 	protected $_never_allowed_str =	array(
 		'document.cookie' => '[removed]',
+<<<<<<< HEAD
 		'document.write'  => '[removed]',
+=======
+<<<<<<< HEAD
+		'document.write'  => '[removed]',
+=======
+<<<<<<< HEAD
+		'document.write'  => '[removed]',
+=======
+		'(document).cookie' => '[removed]',
+		'document.write'  => '[removed]',
+		'(document).write'  => '[removed]',
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
 		'.parentNode'     => '[removed]',
 		'.innerHTML'      => '[removed]',
 		'-moz-binding'    => '[removed]',
@@ -152,7 +190,19 @@ class CI_Security {
 	 */
 	protected $_never_allowed_regex = array(
 		'javascript\s*:',
+<<<<<<< HEAD
 		'(document|(document\.)?window)\.(location|on\w*)',
+=======
+<<<<<<< HEAD
+		'(document|(document\.)?window)\.(location|on\w*)',
+=======
+<<<<<<< HEAD
+		'(document|(document\.)?window)\.(location|on\w*)',
+=======
+		'(\(?document\)?|\(?window\)?(\.document)?)\.(location|on\w*)',
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
 		'expression\s*(\(|&\#40;)', // CSS and IE
 		'vbscript\s*:', // IE, surprise!
 		'wscript\s*:', // IE
@@ -542,6 +592,23 @@ class CI_Security {
 			$str
 		);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+		// Same thing, but for "tag functions" (e.g. eval`some code`)
+		// See https://github.com/bcit-ci/CodeIgniter/issues/5420
+		$str = preg_replace(
+			'#(alert|prompt|confirm|cmd|passthru|eval|exec|expression|system|fopen|fsockopen|file|file_get_contents|readfile|unlink)(\s*)`(.*?)`#si',
+			'\\1\\2&#96;\\3&#96;',
+			$str
+		);
+
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
 		// Final clean up
 		// This adds a bit of extra precaution in case
 		// something got through the above filters
@@ -853,7 +920,19 @@ class CI_Security {
 		// For other tags, see if their attributes are "evil" and strip those
 		elseif (isset($matches['attributes']))
 		{
+<<<<<<< HEAD
 			// We'll store the already fitlered attributes here
+=======
+<<<<<<< HEAD
+			// We'll store the already fitlered attributes here
+=======
+<<<<<<< HEAD
+			// We'll store the already fitlered attributes here
+=======
+			// We'll store the already filtered attributes here
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
 			$attributes = array();
 
 			// Attribute-catching pattern
@@ -927,7 +1006,19 @@ class CI_Security {
 		return str_replace(
 			$match[1],
 			preg_replace(
+<<<<<<< HEAD
 				'#href=.*?(?:(?:alert|prompt|confirm)(?:\(|&\#40;)|javascript:|livescript:|mocha:|charset=|window\.|document\.|\.cookie|<script|<xss|d\s*a\s*t\s*a\s*:)#si',
+=======
+<<<<<<< HEAD
+				'#href=.*?(?:(?:alert|prompt|confirm)(?:\(|&\#40;)|javascript:|livescript:|mocha:|charset=|window\.|document\.|\.cookie|<script|<xss|d\s*a\s*t\s*a\s*:)#si',
+=======
+<<<<<<< HEAD
+				'#href=.*?(?:(?:alert|prompt|confirm)(?:\(|&\#40;)|javascript:|livescript:|mocha:|charset=|window\.|document\.|\.cookie|<script|<xss|d\s*a\s*t\s*a\s*:)#si',
+=======
+				'#href=.*?(?:(?:alert|prompt|confirm)(?:\(|&\#40;|`|&\#96;)|javascript:|livescript:|mocha:|charset=|window\.|\(?document\)?\.|\.cookie|<script|<xss|d\s*a\s*t\s*a\s*:)#si',
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
 				'',
 				$this->_filter_attributes($match[1])
 			),
@@ -955,7 +1046,19 @@ class CI_Security {
 		return str_replace(
 			$match[1],
 			preg_replace(
+<<<<<<< HEAD
 				'#src=.*?(?:(?:alert|prompt|confirm|eval)(?:\(|&\#40;)|javascript:|livescript:|mocha:|charset=|window\.|document\.|\.cookie|<script|<xss|base64\s*,)#si',
+=======
+<<<<<<< HEAD
+				'#src=.*?(?:(?:alert|prompt|confirm|eval)(?:\(|&\#40;)|javascript:|livescript:|mocha:|charset=|window\.|document\.|\.cookie|<script|<xss|base64\s*,)#si',
+=======
+<<<<<<< HEAD
+				'#src=.*?(?:(?:alert|prompt|confirm|eval)(?:\(|&\#40;)|javascript:|livescript:|mocha:|charset=|window\.|document\.|\.cookie|<script|<xss|base64\s*,)#si',
+=======
+				'#src=.*?(?:(?:alert|prompt|confirm|eval)(?:\(|&\#40;|`|&\#96;)|javascript:|livescript:|mocha:|charset=|window\.|\(?document\)?\.|\.cookie|<script|<xss|base64\s*,)#si',
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
 				'',
 				$this->_filter_attributes($match[1])
 			),

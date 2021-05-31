@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
+<<<<<<< HEAD
 -- Generation Time: Nov 15, 2017 at 03:43 PM
+=======
+-- Generation Time: Feb 20, 2018 at 01:44 PM
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -50,14 +54,24 @@ INSERT INTO `siswa` (`nis`, `nama`, `jenis_kelamin`, `telp`, `alamat`) VALUES
 ('10110470116', 'Rinrin Rosilawati', 'Perempuan', '082661551551', 'Banten'),
 ('10110470117', 'Anas Saepul', 'Laki-laki', '089988181717', 'Jakarta'),
 ('10110470118', 'Firman Ramdhan', 'Laki-laki', '089918827635', 'Solo'),
+<<<<<<< HEAD
 ('10110470119', 'Yulia Citra', 'Perempuan', '085661557281', 'Garut'),
+=======
+('10110470119', 'Sherly', 'Perempuan', '085661557281', 'Lampung'),
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
 ('10110470120', 'Yayat', 'Laki-laki', '089928827151', 'Garut'),
 ('10110470121', 'Anjas Yuwar Mahesa', 'Laki-laki', '089166255151', 'Tangerang'),
 ('10110470122', 'Yusup Nur Permadi', 'Laki-laki', '081172652441', 'Bandung'),
 ('10110470123', 'Mawar Izzati', 'Perempuan', '088726166122', 'Yogyakarta'),
+<<<<<<< HEAD
 ('10110470124', 'Shinta Nur Rahma', 'Perempuan', '089188172515', 'Gresik'),
 ('10110470125', 'Ayuni Anggraeni', 'Perempuan', '085516616611', 'Solo'),
 ('10110470126', 'Anika Rizka', 'Perempuan', '082635534778', 'Lombok'),
+=======
+('10110470124', 'Emilia Hasanah', 'Perempuan', '089188172515', 'Bandung'),
+('10110470125', 'Ayuni Anggraeni', 'Perempuan', '085516616611', 'Solo'),
+('10110470126', 'Siti Nurjanah', 'Perempuan', '082635534778', 'Bogor'),
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
 ('10110470127', 'Rijalul', 'Laki-laki', '089918826535', 'Padang'),
 ('10110470128', 'Dwi Angga', 'Laki-laki', '081552171888', 'Bandung'),
 ('10114070129', 'Rizaldi Maulidia Achmad', 'Laki-laki', '089283773622', 'Sumedang');

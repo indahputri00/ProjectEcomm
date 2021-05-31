@@ -7,11 +7,33 @@
 	"support": {
 		"forum": "http://forum.codeigniter.com/",
 		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
 		"irc": "irc://irc.freenode.net/codeigniter",
 		"source": "https://github.com/bcit-ci/CodeIgniter"
 	},
 	"require": {
+<<<<<<< HEAD
 		"php": ">=5.3.7"
+=======
+<<<<<<< HEAD
+		"php": ">=5.3.7"
+=======
+		"php": ">=5.2.4"
+=======
+		"slack": "https://codeigniterchat.slack.com",
+		"source": "https://github.com/bcit-ci/CodeIgniter"
+	},
+	"require": {
+		"php": ">=5.3.7"
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
