@@ -9,8 +9,12 @@
 <<<<<<< HEAD
  * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
 =======
+<<<<<<< HEAD
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+=======
  * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -36,8 +40,12 @@
 <<<<<<< HEAD
  * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
 =======
+<<<<<<< HEAD
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+=======
  * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
@@ -922,6 +930,8 @@ class CI_Email {
 	 * Get Mail Protocol
 	 *
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 	 * @param	bool
 	 * @return	mixed
 	 */
@@ -935,6 +945,7 @@ class CI_Email {
 			return $this->protocol;
 		}
 =======
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	 * @return	mixed
 	 */
 	protected function _get_protocol()
@@ -942,7 +953,10 @@ class CI_Email {
 		$this->protocol = strtolower($this->protocol);
 		in_array($this->protocol, $this->_protocols, TRUE) OR $this->protocol = 'mail';
 		return $this->protocol;
+<<<<<<< HEAD
+=======
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	}
 
 	// --------------------------------------------------------------------
@@ -950,6 +964,11 @@ class CI_Email {
 	/**
 	 * Get Mail Encoding
 	 *
+<<<<<<< HEAD
+	 * @return	string
+	 */
+	protected function _get_encoding()
+=======
 <<<<<<< HEAD
 	 * @param	bool
 	 * @return	string
@@ -960,21 +979,29 @@ class CI_Email {
 	 */
 	protected function _get_encoding()
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	{
 		in_array($this->_encoding, $this->_bit_depths) OR $this->_encoding = '8bit';
 
 		foreach ($this->_base_charsets as $charset)
 		{
 <<<<<<< HEAD
+			if (strpos($this->charset, $charset) === 0)
+=======
+<<<<<<< HEAD
 			if (strpos($charset, $this->charset) === 0)
 =======
 			if (strpos($this->charset, $charset) === 0)
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			{
 				$this->_encoding = '7bit';
 			}
 		}
 
+<<<<<<< HEAD
+		return $this->_encoding;
+=======
 <<<<<<< HEAD
 		if ($return === TRUE)
 		{
@@ -983,6 +1010,7 @@ class CI_Email {
 =======
 		return $this->_encoding;
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	}
 
 	// --------------------------------------------------------------------
@@ -1003,14 +1031,20 @@ class CI_Email {
 			return 'plain-attach';
 		}
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		else
 		{
 			return 'plain';
 		}
+<<<<<<< HEAD
+=======
 =======
 
 		return 'plain';
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	}
 
 	// --------------------------------------------------------------------
@@ -1085,6 +1119,11 @@ class CI_Email {
 		{
 			$email = self::substr($email, 0, ++$atpos).idn_to_ascii(self::substr($email, $atpos));
 =======
+<<<<<<< HEAD
+		if (function_exists('idn_to_ascii') && $atpos = strpos($email, '@'))
+		{
+			$email = self::substr($email, 0, ++$atpos).idn_to_ascii(self::substr($email, $atpos));
+=======
 		if (function_exists('idn_to_ascii') && strpos($email, '@'))
 		{
 			list($account, $domain) = explode('@', $email, 2);
@@ -1093,6 +1132,7 @@ class CI_Email {
 				: idn_to_ascii($domain);
 			$email = $account.'@'.$domain;
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		}
 
 		return (bool) filter_var($email, FILTER_VALIDATE_EMAIL);
@@ -1877,6 +1917,8 @@ class CI_Email {
 		$this->_unwrap_specials();
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 		$method = '_send_with_'.$this->_get_protocol();
 		if ( ! $this->$method())
 		{
@@ -1886,6 +1928,7 @@ class CI_Email {
 
 		$this->_set_error_message('lang:email_sent', $this->_get_protocol());
 =======
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		$protocol = $this->_get_protocol();
 		$method   = '_send_with_'.$protocol;
 		if ( ! $this->$method())
@@ -1895,7 +1938,10 @@ class CI_Email {
 		}
 
 		$this->_set_error_message('lang:email_sent', $protocol);
+<<<<<<< HEAD
+=======
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		return TRUE;
 	}
 
@@ -1923,6 +1969,11 @@ class CI_Email {
 		{
 			$email = self::substr($email, 0, ++$atpos).idn_to_ascii(self::substr($email, $atpos));
 =======
+<<<<<<< HEAD
+		if (function_exists('idn_to_ascii') && $atpos = strpos($email, '@'))
+		{
+			$email = self::substr($email, 0, ++$atpos).idn_to_ascii(self::substr($email, $atpos));
+=======
 		if (function_exists('idn_to_ascii') && strpos($email, '@'))
 		{
 			list($account, $domain) = explode('@', $email, 2);
@@ -1931,6 +1982,7 @@ class CI_Email {
 				: idn_to_ascii($domain);
 			$email = $account.'@'.$domain;
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		}
 
 		return (filter_var($email, FILTER_VALIDATE_EMAIL) === $email && preg_match('#\A[a-z0-9._+-]+@[a-z0-9.-]{1,253}\z#i', $email));
@@ -2148,6 +2200,9 @@ class CI_Email {
 <<<<<<< HEAD
 			$crypto = stream_socket_enable_crypto($this->_smtp_connect, TRUE, STREAM_CRYPTO_METHOD_TLS_CLIENT);
 =======
+<<<<<<< HEAD
+			$crypto = stream_socket_enable_crypto($this->_smtp_connect, TRUE, STREAM_CRYPTO_METHOD_TLS_CLIENT);
+=======
 			/**
 			 * STREAM_CRYPTO_METHOD_TLS_CLIENT is quite the mess ...
 			 *
@@ -2162,6 +2217,7 @@ class CI_Email {
 				: STREAM_CRYPTO_METHOD_TLS_CLIENT;
 			$crypto = stream_socket_enable_crypto($this->_smtp_connect, TRUE, $method);
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 
 			if ($crypto !== TRUE)
 			{
@@ -2353,14 +2409,20 @@ class CI_Email {
 				continue;
 			}
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			else
 			{
 				$timestamp = 0;
 			}
+<<<<<<< HEAD
+=======
 =======
 
 			$timestamp = 0;
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		}
 
 		if ($result === FALSE)

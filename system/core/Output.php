@@ -9,8 +9,12 @@
 <<<<<<< HEAD
  * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
 =======
+<<<<<<< HEAD
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+=======
  * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -36,8 +40,12 @@
 <<<<<<< HEAD
  * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
 =======
+<<<<<<< HEAD
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+=======
  * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
@@ -595,6 +603,8 @@ class CI_Output {
 		}
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 		if (flock($fp, LOCK_EX))
 		{
 			// If output compression is enabled, compress the cache
@@ -652,6 +662,7 @@ class CI_Output {
 			log_message('error', 'Unable to write the complete cache content at: '.$cache_path);
 		}
 =======
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		if ( ! flock($fp, LOCK_EX))
 		{
 			log_message('error', 'Unable to secure a file lock for file at: '.$cache_path);
@@ -705,7 +716,10 @@ class CI_Output {
 
 		// Send HTTP cache-control headers to browser to match file cache settings.
 		$this->set_cache_header($_SERVER['REQUEST_TIME'], $expire);
+<<<<<<< HEAD
+=======
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	}
 
 	// --------------------------------------------------------------------
@@ -773,6 +787,11 @@ class CI_Output {
 			return FALSE;
 		}
 <<<<<<< HEAD
+
+		// Send the HTTP cache control headers
+		$this->set_cache_header($last_modified, $expire);
+=======
+<<<<<<< HEAD
 		else
 		{
 			// Or else send the HTTP cache control headers.
@@ -783,6 +802,7 @@ class CI_Output {
 		// Send the HTTP cache control headers
 		$this->set_cache_header($last_modified, $expire);
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 
 		// Add headers from cache file.
 		foreach ($cache_info['headers'] as $header)
@@ -869,6 +889,8 @@ class CI_Output {
 			exit;
 		}
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 		else
 		{
 			header('Pragma: public');
@@ -877,12 +899,16 @@ class CI_Output {
 			header('Last-modified: '.gmdate('D, d M Y H:i:s', $last_modified).' GMT');
 		}
 =======
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 
 		header('Pragma: public');
 		header('Cache-Control: max-age='.$max_age.', public');
 		header('Expires: '.gmdate('D, d M Y H:i:s', $expiration).' GMT');
 		header('Last-modified: '.gmdate('D, d M Y H:i:s', $last_modified).' GMT');
+<<<<<<< HEAD
+=======
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	}
 
 	// --------------------------------------------------------------------

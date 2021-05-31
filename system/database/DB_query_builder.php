@@ -9,8 +9,12 @@
 <<<<<<< HEAD
  * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
 =======
+<<<<<<< HEAD
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+=======
  * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -36,8 +40,12 @@
 <<<<<<< HEAD
  * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
 =======
+<<<<<<< HEAD
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+=======
  * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
@@ -691,8 +699,12 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 <<<<<<< HEAD
 					$v = ' '.$this->escape($v);
 =======
+<<<<<<< HEAD
+					$v = ' '.$this->escape($v);
+=======
 					$v = $this->escape($v);
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 				}
 
 				if ( ! $this->_has_operator($k))
@@ -711,10 +723,15 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 			}
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			$this->{$qb_key}[] = array('condition' => $prefix.$k.$v, 'escape' => $escape);
 			if ($this->qb_caching === TRUE)
 			{
 				$this->{$qb_cache_key}[] = array('condition' => $prefix.$k.$v, 'escape' => $escape);
+<<<<<<< HEAD
+=======
 =======
 			${$qb_key} = array('condition' => $prefix.$k, 'value' => $v, 'escape' => $escape);
 			$this->{$qb_key}[] = ${$qb_key};
@@ -722,6 +739,7 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 			{
 				$this->{$qb_cache_key}[] = ${$qb_key};
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 				$this->qb_cache_exists[] = substr($qb_key, 3);
 			}
 
@@ -856,8 +874,11 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 			'condition' => $prefix.$key.$not.' IN('.implode(', ', $where_in).')',
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 			'value' => NULL,
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			'escape' => $escape
 		);
 
@@ -987,6 +1008,9 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 			}
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			if ($side === 'none')
 			{
 				$like_statement = "{$prefix} {$k} {$not} LIKE '{$v}'";
@@ -1002,6 +1026,8 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 			else
 			{
 				$like_statement = "{$prefix} {$k} {$not} LIKE '%{$v}%'";
+<<<<<<< HEAD
+=======
 =======
 			switch ($side)
 			{
@@ -1019,12 +1045,16 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 					$v = "'%{$v}%'";
 					break;
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			}
 
 			// some platforms require an escape sequence definition for LIKE wildcards
 			if ($escape === TRUE && $this->_like_escape_str !== '')
 			{
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 				$like_statement .= sprintf($this->_like_escape_str, $this->_like_escape_chr);
 			}
 
@@ -1032,6 +1062,8 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 			if ($this->qb_caching === TRUE)
 			{
 				$this->qb_cache_where[] = array('condition' => $like_statement, 'escape' => $escape);
+<<<<<<< HEAD
+=======
 =======
 				$v .= sprintf($this->_like_escape_str, $this->_like_escape_chr);
 			}
@@ -1042,6 +1074,7 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 			{
 				$this->qb_cache_where[] = $qb_where;
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 				$this->qb_cache_exists[] = 'where';
 			}
 		}
@@ -1068,8 +1101,11 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 			'condition' => $prefix.$not.str_repeat(' ', ++$this->qb_where_group_count).' (',
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 			'value' => NULL,
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			'escape' => FALSE
 		);
 
@@ -1132,8 +1168,11 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 			'condition' => str_repeat(' ', $this->qb_where_group_count--).')',
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 			'value' => NULL,
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			'escape' => FALSE
 		);
 
@@ -1465,12 +1504,18 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 		// on Microsoft SQL Server) and ultimately unnecessary
 		// for selecting COUNT(*) ...
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		if ( ! empty($this->qb_orderby))
 		{
 			$orderby = $this->qb_orderby;
 			$this->qb_orderby = NULL;
 		}
 
+<<<<<<< HEAD
+		$result = ($this->qb_distinct === TRUE OR ! empty($this->qb_groupby) OR ! empty($this->qb_cache_groupby) OR $this->qb_limit OR $this->qb_offset)
+=======
 		$result = ($this->qb_distinct === TRUE OR ! empty($this->qb_groupby) OR ! empty($this->qb_cache_groupby))
 =======
 		$qb_orderby       = $this->qb_orderby;
@@ -1479,6 +1524,7 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 
 		$result = ($this->qb_distinct === TRUE OR ! empty($this->qb_groupby) OR ! empty($this->qb_cache_groupby) OR $this->qb_limit OR $this->qb_offset)
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			? $this->query($this->_count_string.$this->protect_identifiers('numrows')."\nFROM (\n".$this->_compile_select()."\n) CI_count_all_results")
 			: $this->query($this->_compile_select($this->_count_string.$this->protect_identifiers('numrows')));
 
@@ -1487,16 +1533,22 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 			$this->_reset_select();
 		}
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		// If we've previously reset the qb_orderby values, get them back
 		elseif ( ! isset($this->qb_orderby))
 		{
 			$this->qb_orderby = $orderby;
+<<<<<<< HEAD
+=======
 =======
 		else
 		{
 			$this->qb_orderby       = $qb_orderby;
 			$this->qb_cache_orderby = $qb_cache_orderby;
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		}
 
 		if ($result->num_rows() === 0)
@@ -1514,8 +1566,12 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 <<<<<<< HEAD
 	 * Get_Where
 =======
+<<<<<<< HEAD
+	 * Get_Where
+=======
 	 * get_where()
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	 *
 	 * Allows the where clause, limit and offset to be added directly
 	 *
@@ -2480,8 +2536,12 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 <<<<<<< HEAD
 					$this->{$qb_key}[$i] = $this->{$qb_key}[$i]['condition'];
 =======
+<<<<<<< HEAD
+					$this->{$qb_key}[$i] = $this->{$qb_key}[$i]['condition'];
+=======
 					$this->{$qb_key}[$i] = $this->{$qb_key}[$i]['condition'].(isset($this->{$qb_key}[$i]['value']) ? ' '.$this->{$qb_key}[$i]['value'] : '');
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 					continue;
 				}
 
@@ -2523,8 +2583,12 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 <<<<<<< HEAD
 				$this->{$qb_key}[$i] = implode('', $conditions);
 =======
+<<<<<<< HEAD
+				$this->{$qb_key}[$i] = implode('', $conditions);
+=======
 				$this->{$qb_key}[$i] = implode('', $conditions).(isset($this->{$qb_key}[$i]['value']) ? ' '.$this->{$qb_key}[$i]['value'] : '');
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			}
 
 			return ($qb_key === 'qb_having' ? "\nHAVING " : "\nWHERE ")

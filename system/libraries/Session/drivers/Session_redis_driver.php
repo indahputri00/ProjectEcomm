@@ -9,8 +9,12 @@
 <<<<<<< HEAD
  * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
 =======
+<<<<<<< HEAD
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+=======
  * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -36,8 +40,12 @@
 <<<<<<< HEAD
  * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
 =======
+<<<<<<< HEAD
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+=======
  * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 3.0.0
@@ -60,10 +68,14 @@ class CI_Session_redis_driver extends CI_Session_driver implements SessionHandle
 	 * phpRedis instance
 	 *
 <<<<<<< HEAD
+	 * @var	Redis
+=======
+<<<<<<< HEAD
 	 * @var	resource
 =======
 	 * @var	Redis
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	 */
 	protected $_redis;
 
@@ -356,12 +368,16 @@ class CI_Session_redis_driver extends CI_Session_driver implements SessionHandle
 <<<<<<< HEAD
 			if ( ! $this->_redis->setex($lock_key, 300, time()))
 =======
+<<<<<<< HEAD
+			if ( ! $this->_redis->setex($lock_key, 300, time()))
+=======
 			$result = ($ttl === -2)
 				? $this->_redis->set($lock_key, time(), array('nx', 'ex' => 300))
 				: $this->_redis->setex($lock_key, 300, time());
 
 			if ( ! $result)
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			{
 				log_message('error', 'Session: Error while trying to obtain lock for '.$this->_key_prefix.$session_id);
 				return FALSE;

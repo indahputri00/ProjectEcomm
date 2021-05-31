@@ -9,8 +9,12 @@
 <<<<<<< HEAD
  * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
 =======
+<<<<<<< HEAD
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+=======
  * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -36,8 +40,12 @@
 <<<<<<< HEAD
  * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
 =======
+<<<<<<< HEAD
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+=======
  * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
@@ -193,8 +201,12 @@ class CI_Loader {
 <<<<<<< HEAD
 	 * @param	string	$library	Library name
 =======
+<<<<<<< HEAD
+	 * @param	string	$library	Library name
+=======
 	 * @param	mixed	$library	Library name
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	 * @param	array	$params		Optional parameters to pass to the library class constructor
 	 * @param	string	$object_name	An optional object name to assign to
 	 * @return	object
@@ -241,8 +253,12 @@ class CI_Loader {
 <<<<<<< HEAD
 	 * @param	string	$model		Model name
 =======
+<<<<<<< HEAD
+	 * @param	string	$model		Model name
+=======
 	 * @param	mixed	$model		Model name
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	 * @param	string	$name		An optional object name to assign to
 	 * @param	bool	$db_conn	An optional database connection configuration to initialize
 	 * @return	object
@@ -321,9 +337,12 @@ class CI_Loader {
 				}
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 
 				log_message('info', 'CI_Model class loaded');
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			}
 			elseif ( ! class_exists('CI_Model', FALSE))
 			{
@@ -340,9 +359,12 @@ class CI_Loader {
 				}
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 
 				log_message('info', config_item('subclass_prefix').'Model class loaded');
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			}
 		}
 
@@ -379,10 +401,14 @@ class CI_Loader {
 <<<<<<< HEAD
 		$CI->$name = new $model();
 =======
+<<<<<<< HEAD
+		$CI->$name = new $model();
+=======
 		$model = new $model();
 		$CI->$name = $model;
 		log_message('info', 'Model "'.get_class($model).'" initialized');
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		return $this;
 	}
 
@@ -1071,6 +1097,8 @@ class CI_Loader {
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 		// Safety: Was the class already loaded by a previous call?
 		if (class_exists($class, FALSE))
 		{
@@ -1092,6 +1120,7 @@ class CI_Loader {
 		}
 
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		// Let's search for the requested library file and load it.
 		foreach ($this->_ci_library_paths as $path)
 		{
@@ -1103,6 +1132,9 @@ class CI_Loader {
 
 			$filepath = $path.'libraries/'.$subdir.$class.'.php';
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 
 			// Safety: Was the class already loaded by a previous call?
 			if (class_exists($class, FALSE))
@@ -1124,10 +1156,13 @@ class CI_Loader {
 			}
 			// Does the file exist? No? Bummer...
 			elseif ( ! file_exists($filepath))
+<<<<<<< HEAD
+=======
 =======
 			// Does the file exist? No? Bummer...
 			if ( ! file_exists($filepath))
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			{
 				continue;
 			}
@@ -1173,6 +1208,9 @@ class CI_Loader {
 			}
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			// Before we deem this to be a duplicate request, let's see
 			// if a custom object name is being supplied. If so, we'll
 			// return a new instance of the object
@@ -1183,6 +1221,8 @@ class CI_Loader {
 				{
 					return $this->_ci_init_library($library_name, $prefix, $params, $object_name);
 				}
+<<<<<<< HEAD
+=======
 =======
 			$property = $object_name;
 			if (empty($property))
@@ -1196,6 +1236,7 @@ class CI_Loader {
 			{
 				return $this->_ci_init_library($library_name, $prefix, $params, $object_name);
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			}
 
 			log_message('debug', $library_name.' class already loaded. Second attempt ignored.');
@@ -1218,14 +1259,20 @@ class CI_Loader {
 					return $this->_ci_init_library($library_name, $prefix, $params, $object_name);
 				}
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 				else
 				{
 					log_message('debug', $path.' exists, but does not declare '.$prefix.$library_name);
 				}
+<<<<<<< HEAD
+=======
 =======
 
 				log_message('debug', $path.' exists, but does not declare '.$prefix.$library_name);
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			}
 		}
 
@@ -1244,14 +1291,20 @@ class CI_Loader {
 					break;
 				}
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 				else
 				{
 					log_message('debug', $path.' exists, but does not declare '.$subclass);
 				}
+<<<<<<< HEAD
+=======
 =======
 
 				log_message('debug', $path.' exists, but does not declare '.$subclass);
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 			}
 		}
 

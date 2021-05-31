@@ -50,8 +50,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <<<<<<< HEAD
 |				'ssl_capath' - Path to a directory containing trusted CA certificats in PEM format
 =======
+<<<<<<< HEAD
+|				'ssl_capath' - Path to a directory containing trusted CA certificats in PEM format
+=======
 |				'ssl_capath' - Path to a directory containing trusted CA certificates in PEM format
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 |				'ssl_cipher' - List of *allowed* ciphers to be used for the encryption, separated by colons (':')
 |				'ssl_verify' - TRUE/FALSE; Whether verify the server certificate or not ('mysqli' only)
 |
@@ -83,6 +87,12 @@ $db['default'] = array(
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
+	'database' => 'shop',
+=======
+<<<<<<< HEAD
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
 	'database' => 'db_toko',
 =======
 	'hostname' => '127.0.0.1',
@@ -90,6 +100,7 @@ $db['default'] = array(
 	'password' => '',
 	'database' => 'shop',
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

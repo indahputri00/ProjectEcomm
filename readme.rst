@@ -60,8 +60,12 @@ Resources
 <<<<<<< HEAD
 -  `Community IRC <https://webchat.freenode.net/?channels=%23codeigniter>`_
 =======
+<<<<<<< HEAD
+-  `Community IRC <https://webchat.freenode.net/?channels=%23codeigniter>`_
+=======
 -  `Community Slack Channel <https://codeigniterchat.slack.com>`_
 >>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 
 Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
 or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
