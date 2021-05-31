@@ -6,7 +6,23 @@
  *
  * This content is released under the MIT License (MIT)
  *
+<<<<<<< HEAD
  * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+=======
+<<<<<<< HEAD
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+=======
+<<<<<<< HEAD
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+=======
+<<<<<<< HEAD
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+=======
+ * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
+>>>>>>> b204b8542b946d41af4880dd45d4ab606d73d827
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +45,23 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
+<<<<<<< HEAD
  * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+=======
+<<<<<<< HEAD
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+=======
+<<<<<<< HEAD
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+=======
+<<<<<<< HEAD
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+=======
+ * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
+>>>>>>> b204b8542b946d41af4880dd45d4ab606d73d827
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
@@ -143,7 +175,23 @@ class CI_DB_Cache {
 		$segment_two = ($this->CI->uri->segment(2) == FALSE) ? 'index' : $this->CI->uri->segment(2);
 		$filepath = $this->db->cachedir.$segment_one.'+'.$segment_two.'/'.md5($sql);
 
+<<<<<<< HEAD
 		if ( ! is_file($filepath) OR FALSE === ($cachedata = file_get_contents($filepath)))
+=======
+<<<<<<< HEAD
+		if ( ! is_file($filepath) OR FALSE === ($cachedata = file_get_contents($filepath)))
+=======
+<<<<<<< HEAD
+		if ( ! is_file($filepath) OR FALSE === ($cachedata = file_get_contents($filepath)))
+=======
+<<<<<<< HEAD
+		if (FALSE === ($cachedata = @file_get_contents($filepath)))
+=======
+		if ( ! is_file($filepath) OR FALSE === ($cachedata = file_get_contents($filepath)))
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
+>>>>>>> b204b8542b946d41af4880dd45d4ab606d73d827
 		{
 			return FALSE;
 		}

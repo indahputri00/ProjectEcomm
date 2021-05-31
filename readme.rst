@@ -57,7 +57,23 @@ Resources
 -  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
 -  `Community Forums <http://forum.codeigniter.com/>`_
 -  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
+<<<<<<< HEAD
 -  `Community IRC <https://webchat.freenode.net/?channels=%23codeigniter>`_
+=======
+<<<<<<< HEAD
+-  `Community IRC <https://webchat.freenode.net/?channels=%23codeigniter>`_
+=======
+<<<<<<< HEAD
+-  `Community IRC <https://webchat.freenode.net/?channels=%23codeigniter>`_
+=======
+<<<<<<< HEAD
+-  `Community IRC <https://webchat.freenode.net/?channels=%23codeigniter>`_
+=======
+-  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
+>>>>>>> b204b8542b946d41af4880dd45d4ab606d73d827
 
 Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
 or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.

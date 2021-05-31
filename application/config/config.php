@@ -23,7 +23,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+<<<<<<< HEAD
 $config['base_url'] = 'http://localhost/search_ajax_ci/';
+=======
+<<<<<<< HEAD
+$config['base_url'] = 'http://localhost/getdata_ajax_ci/';
+=======
+<<<<<<< HEAD
+$config['base_url'] = 'http://localhost/pagination_ci/';
+=======
+<<<<<<< HEAD
+$config['base_url'] = 'http://localhost/toko/';
+=======
+$config['base_url'] = 'http://localhost/ci_hmvc/';
+
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
+>>>>>>> b204b8542b946d41af4880dd45d4ab606d73d827
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +52,23 @@ $config['base_url'] = 'http://localhost/search_ajax_ci/';
 | variable so that it is blank.
 |
 */
+<<<<<<< HEAD
 $config['index_page'] = 'index.php';
+=======
+<<<<<<< HEAD
+$config['index_page'] = 'index.php';
+=======
+<<<<<<< HEAD
+$config['index_page'] = 'index.php';
+=======
+<<<<<<< HEAD
+$config['index_page'] = '';
+=======
+$config['index_page'] = 'index.php';
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
+>>>>>>> b204b8542b946d41af4880dd45d4ab606d73d827
 
 /*
 |--------------------------------------------------------------------------
@@ -324,7 +357,23 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
+<<<<<<< HEAD
 $config['encryption_key'] = '';
+=======
+<<<<<<< HEAD
+$config['encryption_key'] = '';
+=======
+<<<<<<< HEAD
+$config['encryption_key'] = '';
+=======
+<<<<<<< HEAD
+$config['encryption_key'] = '';
+=======
+$config['encryption_key'] = 'tutoriallogin';
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
+>>>>>>> e7e8abe3bec7d084a97e8d0031a3ce686d32ae1b
+>>>>>>> b204b8542b946d41af4880dd45d4ab606d73d827
 
 /*
 |--------------------------------------------------------------------------

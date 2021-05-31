@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 <IfModule authz_core_module>
     Require all denied
 </IfModule>
 <IfModule !authz_core_module>
     Deny from all
 </IfModule>
+=======
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+>>>>>>> b204b8542b946d41af4880dd45d4ab606d73d827
