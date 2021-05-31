@@ -6,7 +6,15 @@
  *
  * This content is released under the MIT License (MIT)
  *
+<<<<<<< HEAD
  * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+=======
+<<<<<<< HEAD
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+=======
+ * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +37,15 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
+<<<<<<< HEAD
  * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+=======
+<<<<<<< HEAD
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+=======
+ * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 2.0.0
@@ -80,6 +96,10 @@ class CI_Cache_apc extends CI_Driver {
 		$success = FALSE;
 		$data = apc_fetch($id, $success);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		if ($success === TRUE)
 		{
 			return is_array($data)
@@ -88,6 +108,12 @@ class CI_Cache_apc extends CI_Driver {
 		}
 
 		return FALSE;
+<<<<<<< HEAD
+=======
+=======
+		return ($success === TRUE) ? $data : FALSE;
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	}
 
 	// ------------------------------------------------------------------------
@@ -98,11 +124,23 @@ class CI_Cache_apc extends CI_Driver {
 	 * @param	string	$id	Cache ID
 	 * @param	mixed	$data	Data to store
 	 * @param	int	$ttl	Length of time (in seconds) to cache the data
+<<<<<<< HEAD
 	 * @param	bool	$raw	Whether to store the raw value
+=======
+<<<<<<< HEAD
+	 * @param	bool	$raw	Whether to store the raw value
+=======
+	 * @param	bool	$raw	Whether to store the raw value (unused)
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	 * @return	bool	TRUE on success, FALSE on failure
 	 */
 	public function save($id, $data, $ttl = 60, $raw = FALSE)
 	{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		$ttl = (int) $ttl;
 
 		return apc_store(
@@ -110,6 +148,12 @@ class CI_Cache_apc extends CI_Driver {
 			($raw === TRUE ? $data : array(serialize($data), time(), $ttl)),
 			$ttl
 		);
+<<<<<<< HEAD
+=======
+=======
+		return apc_store($id, $data, (int) $ttl);
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	}
 
 	// ------------------------------------------------------------------------
@@ -188,14 +232,29 @@ class CI_Cache_apc extends CI_Driver {
 	 */
 	public function get_metadata($id)
 	{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		$success = FALSE;
 		$stored = apc_fetch($id, $success);
 
 		if ($success === FALSE OR count($stored) !== 3)
+<<<<<<< HEAD
+=======
+=======
+		$cache_info = apc_cache_info('user', FALSE);
+		if (empty($cache_info) OR empty($cache_info['cache_list']))
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		{
 			return FALSE;
 		}
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 		list($data, $time, $ttl) = $stored;
 
 		return array(
@@ -203,6 +262,29 @@ class CI_Cache_apc extends CI_Driver {
 			'mtime'		=> $time,
 			'data'		=> unserialize($data)
 		);
+<<<<<<< HEAD
+=======
+=======
+		foreach ($cache_info['cache_list'] as &$entry)
+		{
+			if ($entry['info'] !== $id)
+			{
+				continue;
+			}
+
+			$success  = FALSE;
+			$metadata = array(
+				'expire' => ($entry['ttl'] ? $entry['mtime'] + $entry['ttl'] : 0),
+				'mtime'  => $entry['ttl'],
+				'data'   => apc_fetch($id, $success)
+			);
+
+			return ($success === TRUE) ? $metadata : FALSE;
+		}
+
+		return FALSE;
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 	}
 
 	// ------------------------------------------------------------------------

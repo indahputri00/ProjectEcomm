@@ -1,7 +1,15 @@
 # Contributing to CodeIgniter
 
 
+<<<<<<< HEAD
 CodeIgniter is a community driven project and accepts contributions of code and documentation from the community. These contributions are made in the form of Issues or [Pull Requests](http://help.github.com/send-pull-requests/) on the [CodeIgniter repository](https://github.com/bcit-ci/CodeIgniter>) on GitHub.
+=======
+<<<<<<< HEAD
+CodeIgniter is a community driven project and accepts contributions of code and documentation from the community. These contributions are made in the form of Issues or [Pull Requests](http://help.github.com/send-pull-requests/) on the [CodeIgniter repository](https://github.com/bcit-ci/CodeIgniter>) on GitHub.
+=======
+CodeIgniter is a community driven project and accepts contributions of code and documentation from the community. These contributions are made in the form of Issues or [Pull Requests](http://help.github.com/send-pull-requests/) on the [CodeIgniter repository](https://github.com/bcit-ci/CodeIgniter) on GitHub.
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
 
 Issues are a quick way to point out a bug. If you find a bug or documentation error in CodeIgniter then please check a few things first:
 
@@ -92,4 +100,12 @@ If you are using command-line you can do the following:
 2. `git pull codeigniter develop`
 3. `git push origin develop`
 
+<<<<<<< HEAD
 Now your fork is up to date. This should be done regularly, or before you send a pull request at least.
+=======
+<<<<<<< HEAD
+Now your fork is up to date. This should be done regularly, or before you send a pull request at least.
+=======
+Now your fork is up to date. This should be done regularly, or before you send a pull request at least.
+>>>>>>> b2425baeb7d4af05e0a85a93ec66f130507ad60c
+>>>>>>> b8a7f5b630587b037b1c6b1cd2c9878e29825eb0
